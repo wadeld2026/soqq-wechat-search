@@ -1,0 +1,35 @@
+{
+  "name": "soqq-wechat-search",
+  "version": "1.0.0",
+  "description": "MCP server: search WeChat official account articles via so.qq.com (Tencent Yuanbao index). No login required. 微信公众号文章检索 MCP 工具（腾讯元宝索引，免登录，返回真实原文链接）",
+  "main": "src/server.js",
+  "bin": {
+    "soqq-wechat-search": "src/search.js",
+    "soqq-wechat-search-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node src/search.js"
+  },
+  "keywords": [
+    "mcp",
+    "wechat",
+    "weixin",
+    "公众号",
+    "search",
+    "so.qq.com",
+    "yuanbao",
+    "modelcontextprotocol",
+    "wechat-article"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "playwright-core": "^1.65.1",
+    "zod": "^3.25.76"
+  }
+}
